@@ -1,29 +1,29 @@
-# def test(arr):
-#     for n in range(len(arr)-1, 0, -1):
-#         for i in range(0, n):
-#             if arr[i] > arr[i+1]:
-#                 temp = arr[i+1]
-#                 arr[i+1] = arr[i]
-#                 arr[i] = temp
-#         # arr[n] = arr[i+1]
-#
-# arr = [2, 5, 4, 6, 7, 3, 1, 4, 12, 11]
-# test(arr)
-# print(arr)
-#
-# def selection_sort(arr):
-#     for n in range(len(arr)-1, 0, -1):
-#         position = 0
-#         for j in range(1, n+1):
-#             if arr[j] > arr[position]:
-#                 position = j
-#         temp = arr[n]
-#         arr[n] = arr[position]
-#         arr[position] = temp
-#
-# arr1 = [9,8,7,6]
-# selection_sort(arr1)
-# print(arr1)
+def test(arr):
+    for n in range(len(arr)-1, 0, -1):
+        for i in range(0, n):
+            if arr[i] > arr[i+1]:
+                temp = arr[i+1]
+                arr[i+1] = arr[i]
+                arr[i] = temp
+        # arr[n] = arr[i+1]
+
+arr = [2, 5, 4, 6, 7, 3, 1, 4, 12, 11]
+test(arr)
+print(arr)
+
+def selection_sort(arr):
+    for n in range(len(arr)-1, 0, -1):
+        position = 0
+        for j in range(1, n+1):
+            if arr[j] > arr[position]:
+                position = j
+        temp = arr[n]
+        arr[n] = arr[position]
+        arr[position] = temp
+
+arr1 = [9,8,7,6]
+selection_sort(arr1)
+print(arr1)
 
 """Sum using recursion function"""
 def sum(arr):
